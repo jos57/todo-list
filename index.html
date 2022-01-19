@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css"> <!--cdn bootstrap.-->
+    <link rel="stylesheet" href="styledCustom.css">
+    <script src="main.js" defer></script>
+    <title>App Tasks</title>
+</head>
+<body class="bg-secondary">
+   <div class="row">
+    <div class="card text-white bg-primary mt-5 ml-5 my-3 col-4">
+        <div class="card-header row">
+            <h3 class="col-6 text-dark">Tasks</h3>
+            <h5 class="col-6 text-right" id="dia">lunes</h5>
+        </div>
+        <div class="card-body">
+            <form class="form-group" id="form">
+                <input type="text" class="col-12 form-control" placeholder="Insert new task" id="newTask" autocomplete="off"> <!--input para ingreso de nueva tarea.-->
+                <h5 class="mt-4 text-center">Priority</h5>
+                <div class="form-check text-center">
+                    <input type="radio" name="Priority" class="form-check-input" id="hight">
+                    <label for=""  for="Hight" class="form-check-label">Hight</label>
+                    <input type="radio" name="Priority" class="form-check-input ml-1" id="medium">
+                    <label for="" class="form-check-label ml-4">Medium</label>
+                    <input type="radio" name="Priority"class="form-check-input ml-1" id="low">
+                    <label for="" class="form-check-label ml-4">Low</label>
+                </div>
+                <input type="submit" value="Create" class="btn btn-success btn-lg btn-block form-control mt-4" id="create">
+            </form>
+        </div>
+    </div> 
+    <div class="col-7">
+        <div class="bg-primary mt-5 ml-5 card col-4">
+            <div class="card-header row text-light">All tasks done</div>
+            <div class="card-body" >
+                <h4 class="rounded-pill bg-light text-center" id="divCount">0</4>
+                </div>
+                <p class="textDinamics">No Task Complited</p>
+        </div>
+        <div class="bg-primary mt-5 ml-5 card col-4">
+            <div class="card-header row text-light">Current Hours</div>
+            <div class="card-body" >
+                <h4 class="" id="currentHours">0</4>
+            </div>
+        </div>
+    </div>
+</div>                      
+<div class="row">
+    <div id="App" class="col-8"></div> 
+</div> 
+</body>
+</html>
+                    
